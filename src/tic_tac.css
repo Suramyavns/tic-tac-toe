@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackside+One&display=swap');
+body{
+    background-color: #272829;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    color: whitesmoke;
+  }
+  body::-webkit-scrollbar{
+    display: none;
+  }
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .box{
+    background-color: #dad8d8;
+    width: 9vw;
+    height: 9vw;
+    border-radius: 10%;
+    margin: 1vw;
+    transition: ease 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box:hover{
+    transition: ease 0.5s;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .box>button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 900%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "Slackside One",cursive,sans-serif;
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Slackside One",cursive,sans-serif;
+    font-weight: bolder;
+    padding-bottom: 5vh;
+  }
+  .header>p{
+    margin: 5px;
+    font-size: 8em;
+  }
+  .tic{
+    color: blue;
+  }
+  .tac{
+    color: red;
+  }
+  .toe{
+    color: yellow;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+  }
+
+  .result>h1{
+    font-size: 4em;
+    font-family: "Slackside One",sans-serif;
+  }
